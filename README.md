@@ -15,5 +15,5 @@ Please note that the weight is in thousands of pounds.
 				
 Source code for the project is available on the [GitHub](https://github.com/daniel-zhou/Developing-Data-Products).
 
-The presentation for the project can be found [here](http://rpubs.com/danielleecn/49447)
+The presentation for the project can be found [here](http://rpubs.com/danielleecn/111667)
 
