@@ -1,0 +1,9 @@
+name: Publish Document
+account: rpubs
+server: rpubs.com
+appId:
+        https://api.rpubs.com/api/v1/document/111667/6be33d4918544bceb88e509deb24e2cc
+bundleId:
+        https://api.rpubs.com/api/v1/document/111667/6be33d4918544bceb88e509deb24e2cc
+url: http://rpubs.com/danielleecn/111667
+when: 1443114274.69395

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products - Course Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products - Course Project">
+  <meta name="author" content="Daniel, Yiquan Zhou">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products - Course Project</h1>
+    <h2>Performance Prediction of a Car from Design Parameters</h2>
+    <p>Daniel, Yiquan Zhou<br/>Engineer</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Performance Prediction of a Car from Design Parameters</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This presentation is being created as part of the course project of the Coursera&#39;s Developing Data Products course. This assignment is to demonstrate that the following concepts are understood by the students.</p>
+
+<ul>
+<li><strong>shiny</strong> to build data product application</li>
+<li><strong>R-Presentation or slidify</strong> to create data product related presentations</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>To display the understanding of using <strong>shiny</strong> to build an application, a simple application called <strong>Performance Prediction of a Car from Design Parameters</strong> has been developed and deployed at: 
+<a href="https://daniel-zhou.shinyapps.io/Developing-Data-Products/">https://daniel-zhou.shinyapps.io/Developing-Data-Products/</a></p>
+
+<p>The application allows the user to predict the performance of a car based on some basic design parameters, in terms of </p>
+
+<ul>
+<li>time to complete the quarter mile </li>
+<li>in fuel economy</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Source Codes</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Source code for the project is available on the <a href="https://github.com/daniel-zhou/Developing-Data-Products">GitHub</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Read Data</p>
+
+<pre><code class="r">mtcars_dt &lt;- read.csv(&#39;mtcars.csv&#39;)
+head(mtcars_dt)
+</code></pre>
+
+<pre><code>##                   X  mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## 1         Mazda RX4 21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## 2     Mazda RX4 Wag 21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## 3        Datsun 710 22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## 4    Hornet 4 Drive 21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## 5 Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## 6           Valiant 18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Performance Prediction of a Car from Design Parameters'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Application'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Source Codes'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Data'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
